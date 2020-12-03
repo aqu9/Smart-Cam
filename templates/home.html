@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='home.css') }}">
+    <!-- <script type="text/javascript" src="../static/dtcheck.js"></script> -->
+</head>
+<body>
+    <div class=wrapper>
+        <div id="header">
+            <h1 id="heading">SMART CAM</h1>
+        </div>
+    </div>
+<div class="content">
+    <form method="post" action="/next" enctype="multipart/form-data" onsubmit="return validate()">
+    <div class="inputlabel" id="select_iplanguage"><span>CHOOSE INPUT LANGUAGE</span></div>
+    <div class="select form" id="input_language">
+        <!-- <label>CHOOSE INPUT LANGUAGE</label> -->
+        <select name="slct" id="slct" onchange="show('arrow2','select_oplanguage','output_language')">
+          <option selected disabled>Choose an option</option>
+          <option value="en" id="ip1">English</option>
+          <option value="hi" id="ip2">Hindi</option>
+          <option value="Pa" id="ip3">Punjabi</option>
+        </select>
+    </div>
+    <div id="arrow2" class="arrow"><span>&#8608; &#8608;  &#8608;</span></div>
+    <div class="inputlabel" id="select_oplanguage"><span>CHOOSE OUTPUT LANGUAGE</span></div>
+    <div class="select form" id="output_language">
+        <!-- <label>CHOOSE OUTPUT input_language</label> -->
+        <select name="slct1" id="slct1" onchange="display('arrow1','select_tf','user_input')">
+          <option selected disabled>Choose an option</option>
+          <option value="" id="op1"></option>
+          <option value="" id="op2"></option>
+          <!-- <option value="3" id="op3">Nice!</option> -->
+        </select>
+    </div>
+    <div id="arrow1" class="arrow"><span>&#8609;</span></div>
+    <div class="inputlabel" id="select_tf"><span>SELECT IMAGE OR ENTER TEXT</span></div>
+    <div class="user_input form" id="user_input" onchange="btndisplay('submit')">
+    <div class="input_text" id="input_text">
+        <input type="text" name="iptext" placeholder="Enter text" oninput="btndisplay('msg')" id="iptext">
+    </div>
+    <div class="inputlabel" id="msg"><span id="msgip">Press Enter After Typing</span></div>
+    <div class="file_input" id="file_input">
+        <input type="file" id="fileip" name="ipfile" accept=".png,.jpeg,.jpg">
+    </div>
+</div>
+    <div class="submit form" id="submit">
+        <input type="submit" id="submitbtn">
+
+    </div>
+</form>
+
+</div>
+    
+</body>
+<!-- <script type="text/javascript" src="../static/dtcheck.js"></script> -->
+<script type="text/javascript" src="{{ url_for('static', filename='dtcheck.js') }}"></script>
+</html>

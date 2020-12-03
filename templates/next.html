@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXT</title>
+    <!-- <link rel="stylesheet" type="text/css" href="../static/next.css"> -->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='next.css') }}">
+</head>
+<body> 
+    <div class=wrapper>
+        <div id="header">
+            <h1 id="heading">SMART CAM</h1>
+        </div>
+    </div>
+<div class="content">
+    <div class="prevtext" id="previmgtext">
+        <span>PREVIEW IMAGE</span>
+    </div>
+    <div class="prev_image" id="prev_image">
+        <div class="uimage" id="uimage">
+            {% if filename %}
+            <img src="{{ url_for('static', filename=filename) }}" alt="user input image">
+            {% endif %}
+        </div>
+    </div>
+    <div class="prevtext" id="ipimgtext">
+        <span>EXTRACTED TEXT FROM IMAGE</span>
+    </div>
+    <div class="useriptext" id="useriptext">
+        <span>
+            Input Language :-{% if iplang %} {{ iplang }} {% endif %}
+        </span>
+        <hr>
+        <div class="text" id="iptext">
+            {% if t %}
+            <p>{{ t }}</p>
+            {% endif %}
+        </div>
+    </div>
+    <div class="prevtext" id="opimgtext">
+        <span>TRANSLATED TEXT</span>
+    </div>
+    <div class="useriptext" id="useroptext">
+        <span>
+        Output Language :- {% if oplang %} {{ oplang }} {% endif %}
+    </span>
+    <hr>
+        <div class="text" id="optext">
+            {% if optext %}
+            <p>{{ optext }}</p>
+            {% endif %}
+        </div>
+    </div>
+    <div class="btn" id="again">
+        <a href="\"><input type="button" id="btn1" value="Upload Image/Type text"></a>
+
+    </div>
+</div>
+    
+</body>
+</html>

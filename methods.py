@@ -117,11 +117,7 @@ def read_image_and_extension(path):
         ext="jpeg"
     return image,ext
 
-def text_to_image(image):
-    text=pytesseract.image_to_string(image)
-    return text
     
-
 
 # In[ ]:
 

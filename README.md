@@ -14,4 +14,36 @@ To transalate text we first we use text blob module it's auto detect input langu
 English,Hindi,Punjabi
 
 ## Requirement
-1.  fla
+Here we use ubuntu 20.04 focal fossa
+To run this repo on your system you need to download some required module
+
+### 1.  tesseract-ocr
+
+## In Ubuntu
+sudo apt install tesseract-ocr
+
+## In Windows
+you need to download treeseract ocr from
+
+https://github.com/UB-Mannheim/tesseract/wiki
+
+And add this line in **methods.py**
+pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+**2.  pytesseract**
+
+**3.  opencv**
+
+**4.  textblob**
+
+**5.  numpy**
+
+**6.  flask**
+
+**7.  werkzeug**
+
+**8.  urllib**
+
+**9.  os**
+
+**10. time**
+

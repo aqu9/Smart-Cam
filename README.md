@@ -29,23 +29,16 @@ https://github.com/UB-Mannheim/tesseract/wiki
 
 And add this line in **methods.py**
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-**2.  pytesseract**
 
-**3.  opencv**
-
-**4.  textblob**
-
-**5.  numpy**
-
-**6.  flask**
-
-**7.  werkzeug**
-
-**8.  urllib**
-
-**9.  os**
-
-**10. time**
+2.  pytesseract
+3.  opencv
+4.  textblob
+5.  numpy
+6.  flask
+7.  wekzeug
+8.  urllib
+9.  os
+10. time
 
 # FLASK WEBPAGE OUTPUT
 

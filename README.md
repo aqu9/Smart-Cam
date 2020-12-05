@@ -27,7 +27,8 @@ you need to download treeseract ocr from
 
 https://github.com/UB-Mannheim/tesseract/wiki
 
-And add this line in **methods.py**
+And add this line in **methods.py** 
+
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 2.  pytesseract

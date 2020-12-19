@@ -271,5 +271,80 @@ input[type=submit]{
     top: 33%;
     left: 31%;
 }
+@media screen and (max-width: 360px) {
+    .wrapper{
+        height: 60px;
+    }
+    #heading {
+        color: aqua;
+        font-size: 28px;
+    }
+    #header {
+        left: 29%;
+    }
+    .content{
+        height: 600px;
+        margin-top: 4%;
+    }
+    .select{
+        width: 18em;
+    }
 
+    #input_language{
+        display: flex;
+        top: 8%;
+        left: 5%;
+    }
+    
+    #output_language{
+        top: 25%;
+        left: 5%;
+    }
+
+    #select_iplanguage{
+        top: 2%;
+        left: 10%;
+    }
+    #select_oplanguage{
+        top: 19%;
+        left: 8%;
+    }
+    #arrow1{
+        top: 30%;
+        font-size: 55px;
+    }
+    #arrow2{
+        display: none;
+        top: 25%;
+    }
+    #select_tf{
+        /* display: none; */
+        top: 43%;
+        left: 7%;
+    }
+
+    #input_text{
+        top: 70%;
+        left: 7%;
+    }
+    .input_text{
+        width: 18em;
+    }
+    .file_input{
+        width: 18em;
+    }
+    #file_input{
+        top: 50%;
+        left: 7%;
+    }
+#msg {
+    top: 62%;
+    left: 11%;
+}
+#submit{
+    left: 25%;
+    top: 86%;
+}
+
+}
 

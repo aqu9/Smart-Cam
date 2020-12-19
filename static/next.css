@@ -152,3 +152,70 @@ input[type=button]{
 #again:active{
     background: cadetblue;
 }
+@media screen and (max-width: 360px) {
+    .wrapper{
+        height: 60px;
+    }
+    #heading {
+        color: aqua;
+        font-size: 28px;
+    }
+    #header {
+        left: 29%;
+    }
+    .content{
+        height: 700px;
+        margin-top: 4%;
+    }
+    #previmgtext{
+        top: 2%;
+        left: 15%;
+        font-size: 30px;
+    }
+    .prev_image {
+        /* position: absolute; */
+        /* border: 3px solid red; */
+        width: 90%;
+        height: 27%;
+        top: 8%;
+        left: 4%;
+    }
+    /* .prev_image img{
+        position: absolute;
+        width: 95%;
+        /* height: 360px; */
+        /* height: 96%;
+        top: 2%;
+        left: 3%;
+        border: 3px dashed black;
+    } */
+    .useriptext{
+        width: 90%;
+        height: 22%;
+        left: 4%;
+        top: 42%;
+    }
+    #useroptext{
+        top: 70%;
+    }
+    #ipimgtext{
+        left: 6%;
+        top: 38%;
+    
+    }
+    #opimgtext{
+        top: 66%;
+        left: 6%;
+    }
+    hr {
+        top: 20%;
+    }
+    .text{
+        font-size: 12px;
+        overflow: auto;
+    }
+    #again{
+        left: 14%;
+        top: 93.6%;
+    }
+}
